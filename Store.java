@@ -25,8 +25,12 @@ public class Store {
     // main method
     public static void main(String[] args) {
         Store lemonadeStand = new Store("Lemonade", 3.75);
-        double lemonadePrice = lemonadeStand.getPriceWithTax();
-        System.out.println(lemonadePrice);
+        Store cookieShop = new Store("Cookies", 5);
+        System.out.println(lemonadeStand);
+        System.out.println(cookieShop);
+    }
 
+    public String toString() {
+        return "This store sells " + productType + " at a price of " + price + ".";
     }
 }
